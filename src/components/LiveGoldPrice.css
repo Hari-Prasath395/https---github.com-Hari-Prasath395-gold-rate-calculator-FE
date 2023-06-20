@@ -1,0 +1,38 @@
+.jewel {
+    height: 100% ;
+    width: 100%;
+  }
+  
+  .title {
+    color: goldenrod;
+    margin-bottom: 10px;
+  }
+  
+  /* .card {
+    width: 100%;
+  } */
+  
+ 
+  .info {
+    margin-top: 25px;
+  }
+  
+  .info > p {
+    text-align: left;
+  }
+  
+  h5 {
+    color: goldenrod;
+  }
+  
+  @media (max-width: 768px) {
+    .col-8,
+    .col-4 {
+      margin-bottom: 20px;
+    }
+  
+    .col-4 {
+      text-align: center;
+    }
+  }
+  

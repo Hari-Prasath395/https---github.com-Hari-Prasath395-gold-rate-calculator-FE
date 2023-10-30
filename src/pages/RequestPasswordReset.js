@@ -18,7 +18,7 @@ const RequestPasswordReset = () => {
 
   const handleSubmit = async (values) => {
     try {
-      const response = await axios.post('http://localhost:8000/user/requestpasswordreset', {
+      const response = await axios.post('https://gold-rate-convertor.onrender.com/user/requestpasswordreset', {
         email: values.email,
         redirectUrl: 'http://localhost:3000/password-reset-success',
       });

@@ -11,8 +11,9 @@ import * as Yup from 'yup';
 const Signup = () => {
   const handleSubmit = async (values, { resetForm }) => {
     try {
-      const response = await axios.post('http://localhost:8000/user/signupuser', values);
+      //const response = await axios.post('http://localhost:8000/user/signupuser', values);
 
+      const response = await axios.post('https://gold-rate-convertor.onrender.com/user/signupuser', values);
       if (response.data.status === 'Failed') {
         console.log(response.data.message);
       } else if (response.data.status === 'Success') {

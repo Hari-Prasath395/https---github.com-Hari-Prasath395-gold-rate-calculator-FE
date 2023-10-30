@@ -18,7 +18,9 @@ const Login = () => {
 
   const handleLogin = async (values) => {
     try {
-      const response = await axios.post('http://localhost:8000/user/signin', values);
+      // const response = await axios.post('http://localhost:8000/user/signin', values);
+
+      const response = await axios.post('https://gold-rate-convertor.onrender.com/user/signin', values);
 
       if (response.data.status === 'Success') {
         const { token } = response.data.data;

@@ -12,7 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     const getCurrentUser = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/user/getCurrentUser', {
+        const response = await axios.get('https://gold-rate-convertor.onrender.com/user/getCurrentUser', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },

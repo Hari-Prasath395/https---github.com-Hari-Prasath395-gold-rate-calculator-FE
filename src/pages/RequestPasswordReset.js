@@ -20,7 +20,7 @@ const RequestPasswordReset = () => {
     try {
       const response = await axios.post('https://gold-rate-convertor.onrender.com/user/requestpasswordreset', {
         email: values.email,
-        redirectUrl: 'https://localhost:3000/password-reset-success',
+        redirectUrl: 'https://frabjous-genie-8ba260.netlify.app/password-reset-success',
       });
 
       if (response.data.status === 'Failed') {
